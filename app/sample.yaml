@@ -2,11 +2,12 @@
 # the Zephyr testing tool. In this file, multiple combinations can be specified,
 # so that you can easily test all of them locally or in CI.
 sample:
-  description: phyBOARD-Electra M4 Firmware
+  description: PHYTEC Example Firmware
   name: example-firmware
 common:
   build_only: true
   integration_platforms:
+    - phyboard_lyra/am6234/m4
     - phyboard_electra/am6442/m4
 tests:
   app.default: {}

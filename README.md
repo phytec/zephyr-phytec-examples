@@ -66,14 +66,14 @@ To build the application, run the following command:
 
 ```shell
 cd example-application
-west build -b phyboard_lyra/am6234/m4 app/phyboard_lyra_am6234_m4
+west build -b phyboard_lyra/am6234/m4 app
 ```
 
 A sample debug configuration is also provided. To apply it, run the following
 command:
 
 ```shell
-west build -b phyboard_lyra/am6234/m4 app/phyboard_lyra_am6234_m4 -- -DOVERLAY_CONFIG=debug.conf
+west build -b phyboard_lyra/am6234/m4 app -- -DOVERLAY_CONFIG=debug.conf
 ```
 
 Once you have built the application, run the following command to flash it:

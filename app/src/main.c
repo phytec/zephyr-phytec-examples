@@ -7,8 +7,8 @@
 #include <stdio.h>
 #include <zephyr/kernel.h>
 
-#include "../../common/heartbeat.h"
-#include "../../common/uart_loopback.h"
+#include "heartbeat.h"
+#include "uart_loopback.h"
 
 K_THREAD_DEFINE(heartbeat_tid, HEARTBEAT_STACKSIZE, heartbeat, NULL, NULL,
 		NULL, HEARTBEAT_PRIORITY, 0, 0);
